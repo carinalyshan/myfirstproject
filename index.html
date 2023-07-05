@@ -4,13 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1 class="big-title"> Hello World, we're friendly</h1>   
+
+  <nav class="navbar" id="myNavbar">
+    <a href="/index.html" class="active">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/projects.html">Projects</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+</script>
+    <h1 class="big-title animate__animated"> Hello World, we're friendly</h1>   
     <p>sup</p>
     <p>testing</p>
     <button class="button primary big">click me!</button>
+    <br>
+    <i class='bx bx-user'></i>
+<i class='bx bxs-user'></i>
+<i class='bx bxl-facebook-square'></i>
 </body>
 </html>
